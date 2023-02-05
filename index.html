@@ -1,1 +1,33 @@
-<!doctype html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/meetthenonjolis/favicon.ico"><title>meetthenonjolis-app</title><script defer="defer" src="/meetthenonjolis/js/chunk-vendors.0b16046c.js"></script><script defer="defer" src="/meetthenonjolis/js/app.186d39d6.js"></script><link href="/meetthenonjolis/css/app.ed67457e.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but meetthenonjolis-app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div></body></html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Nonjolis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://unpkg.com/vue-router@4"></script>
+
+    <div id="app">
+        <h1>Hello App!</h1>
+        <p>
+            <!-- use the router-link component for navigation. -->
+            <!-- specify the link by passing the `to` prop. -->
+            <!-- `<router-link>` will render an `<a>` tag with the correct `href` attribute -->
+            <router-link to="/">Go to Home</router-link>
+            <router-link to="/about">Go to About</router-link>
+        </p>
+        <!-- route outlet -->
+        <!-- component matched by the route will render here -->
+        <router-view></router-view>
+    </div>
+
+    <script type='module' src="js/home.js"></script>
+    <script type='module' src="js/app.js"></script>
+</body>
+
+</html>
