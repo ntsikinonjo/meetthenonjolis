@@ -1,0 +1,11 @@
+/*
+ * home
+ */
+ .xs-top-bar-title {
+
+    margin: auto;
+    font-family: 'Glitter';
+
+    color: var(--nj-charcoal);
+    text-align: center;
+ }
