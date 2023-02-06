@@ -1,4 +1,5 @@
 import home from "./home.js";
+import { hello } from './home.js';
 
 // 1. Define route components.
 // These can be imported from other files
