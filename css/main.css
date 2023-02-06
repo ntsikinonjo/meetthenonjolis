@@ -1,0 +1,14 @@
+/*
+ * MAIN
+ */
+ html, body {
+    
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.mobile-image {
+
+    max-width: 100%;
+    height: auto;
+}
