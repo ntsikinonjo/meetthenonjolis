@@ -9,3 +9,25 @@
     color: var(--nj-charcoal);
     text-align: center;
  }
+
+ .xs-home-title {
+
+   font-size: 2.5em;
+   font-family: 'Lobster';
+   text-align: center;
+ }
+
+ .xs-home-divider {
+
+   display: block;
+   width: 4em;
+   height: auto;
+   margin: auto;
+ }
+
+ .xs-home-paragraph {
+
+   font-size: 1.25em;
+   font-family: 'Roboto';
+   text-align: center;
+ }
