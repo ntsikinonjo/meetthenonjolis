@@ -1,6 +1,12 @@
 /* EXTERNAL */
 @import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400,700,700italic);
 
+/* ADDINGTON CF THIN */
+@font-face {
+    font-family: 'Addington Cf Thin';
+    src: url(../font/addington-cf-thin.ttf);
+}
+
 /* I LOVE GLITTER */
 @font-face {
     font-family: Glitter;
@@ -17,4 +23,10 @@
 @font-face {
     font-family: Roboto;
     src: url(../font/roboto-regular.ttf);
+}
+
+/* VOGA */
+@font-face {
+    font-family: Voga;
+    src: url(../font/voga-medium.ttf);
 }

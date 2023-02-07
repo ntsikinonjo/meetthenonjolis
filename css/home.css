@@ -12,7 +12,8 @@
 
  .xs-home-title {
 
-   font-size: 2.5em;
+   color: var(--nj-ruby);
+   font-size: 2em;
    font-family: 'Lobster';
    text-align: center;
  }
@@ -27,7 +28,25 @@
 
  .xs-home-paragraph {
 
-   font-size: 1.25em;
-   font-family: 'Roboto';
+   color: var(--nj-semi-grey);
+   font-size: 1.1em;
+   font-family: 'Addington Cf Thin';
+   line-height: 1.2;
    text-align: center;
+   white-space: pre-wrap;
  }
+
+ .xs-home-list {
+
+  color: var(--nj-semi-grey);
+  font-size: 1.1em;
+  font-family: 'Addington Cf Thin';
+  line-height: 1.2;
+  white-space: pre-wrap;
+}
+
+.xs-home-gift-link {
+
+  display: block;
+  text-align: center;
+}

@@ -2,4 +2,15 @@
 
     /* charcoal */
     --nj-charcoal: rgba(32, 32, 32, 1.0);
+
+    /* chocolate */
+    --nj-chocolate: rgba(120, 68, 33, 1.0);
+
+    --nj-ruby: rgba(160, 44, 44, 1.0);
+
+    /* semi-grey */
+    --nj-semi-grey: rgba(78, 78, 78, 1.0);
+
+    /* sky */
+    --nj-sky: rgba(85, 153, 255, 1.0);
   }
