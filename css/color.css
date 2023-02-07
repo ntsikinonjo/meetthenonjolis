@@ -2,6 +2,18 @@
 
     /* charcoal */
     --nj-charcoal: rgba(32, 32, 32, 1.0);
+    --nj-charcoal-5: rgba(32, 32, 32, 0.05);
+    --nj-charcoal-10: rgba(32, 32, 32, 0.1);
+    --nj-charcoal-20: rgba(32, 32, 32, 0.2);
+    --nj-charcoal-30: rgba(32, 32, 32, 0.3);
+    --nj-charcoal-40: rgba(32, 32, 32, 0.4);
+    --nj-charcoal-50: rgba(32, 32, 32, 0.5);
+    --nj-charcoal-60: rgba(32, 32, 32, 0.6);
+    --nj-charcoal-70: rgba(32, 32, 32, 0.7);
+    --nj-charcoal-80: rgba(32, 32, 32, 0.8);
+    --nj-charcoal-90: rgba(32, 32, 32, 0.9);
+
+
 
     /* chocolate */
     --nj-chocolate: rgba(120, 68, 33, 1.0);

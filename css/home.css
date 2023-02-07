@@ -50,3 +50,8 @@
   display: block;
   text-align: center;
 }
+
+.xs-home-event-info {
+
+  box-shadow: 0 10px 12px 3px var(--nj-charcoal-20);
+}
