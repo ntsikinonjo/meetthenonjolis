@@ -25,4 +25,10 @@
 
     /* sky */
     --nj-sky: rgba(85, 153, 255, 1.0);
+
+
+
+    /* mud */
+    --nj-mud: rgba(145, 111, 111);
+    --nj-mud-highlight: rgb(179, 157, 157);
   }

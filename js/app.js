@@ -1,4 +1,5 @@
 import home from "./home.js";
+import menu from "./menu.js";
 
 // 1. Define route components.
 // These can be imported from other files
@@ -10,6 +11,7 @@ const About = { template: '<div>About</div>' }
 // We'll talk about nested routes later.
 const routes = [
     { path: '/', component: home },
+    { path: '/menu', component: menu },
     { path: '/about', component: About },
 ]
 

@@ -1,0 +1,35 @@
+/*
+ * menu
+ */
+.xs-menu-bg {
+
+    min-height: 100%;
+    background-color: var(--nj-mud);
+}
+
+.xs-menu-divider {
+
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: white;
+}
+
+.xs-menu-top-title {
+
+    margin: auto;
+    font-family: 'Glitter';
+
+    color: white;
+    text-align: center;
+}
+
+.xs-menu-list {
+
+    list-style-type: none;
+}
+
+.xs-menu-list-item {
+
+    color: white;
+    text-decoration: none;
+}

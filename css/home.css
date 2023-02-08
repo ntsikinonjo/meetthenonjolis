@@ -55,3 +55,28 @@
 
   box-shadow: 0 10px 12px 3px var(--nj-charcoal-20);
 }
+
+.xs-home-menu-btn {
+
+  z-index: 47;
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  display: block;
+  text-align: center;
+  border-radius: 80px;
+  background-color: var(--nj-mud);
+  box-shadow: 1px 1px 6px 2px var(--nj-charcoal-40);
+
+  transform: scale(1, 1) translate3d(0, 0, 0);
+}
+
+.xs-home-menu-btn:active {
+
+  background-color: var(--nj-mud-highlight);
+
+  transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+  transition-property: all;
+  transition-duration: 350ms;
+  transition-timing-function: ease-in-out;
+}
