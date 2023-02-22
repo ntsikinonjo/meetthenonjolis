@@ -53,6 +53,20 @@
   text-align: center;
 }
 
+.xs-home-gift-link-image {
+
+  margin: auto;
+  text-align: center;
+  animation: blinker 1s ease-in-out infinite;
+}
+
+@keyframes blinker {
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
 .xs-home-event-info {
 
   box-shadow: 0 10px 12px 3px var(--nj-charcoal-20);
@@ -118,6 +132,7 @@
 .xs-home-bottom-list-item {
 
   color: white;
+  cursor: pointer;
   text-decoration: none;
   font-family: 'Addington Cf Thin';
 }
