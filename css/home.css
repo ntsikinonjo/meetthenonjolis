@@ -1,42 +1,44 @@
 /*
  * home
  */
- .xs-top-bar-title {
+/* XS ----------------------------------------------------------------------------------------- */
+.xs-top-bar-title {
 
-    margin: auto;
-    font-family: 'Glitter';
+  margin: auto;
+  font-family: 'Glitter';
 
-    color: var(--nj-charcoal);
-    text-align: center;
- }
+  color: var(--nj-charcoal);
+  text-align: center;
+  user-select: none;
+}
 
- .xs-home-title {
+.xs-home-title {
 
-   color: var(--nj-ruby);
-   font-size: 2em;
-   font-family: 'Lobster';
-   text-align: center;
- }
+  color: var(--nj-ruby);
+  font-size: 2em;
+  font-family: 'Lobster';
+  text-align: center;
+}
 
- .xs-home-divider {
+.xs-home-divider {
 
-   display: block;
-   width: 4em;
-   height: auto;
-   margin: auto;
- }
+  display: block;
+  width: 4em;
+  height: auto;
+  margin: auto;
+}
 
- .xs-home-paragraph {
+.xs-home-paragraph {
 
-   color: var(--nj-semi-grey);
-   font-size: 1.1em;
-   font-family: 'Addington Cf Thin';
-   line-height: 1.2;
-   text-align: center;
-   white-space: pre-wrap;
- }
+  color: var(--nj-semi-grey);
+  font-size: 1.1em;
+  font-family: 'Addington Cf Thin';
+  line-height: 1.2;
+  text-align: center;
+  white-space: pre-wrap;
+}
 
- .xs-home-list {
+.xs-home-list {
 
   color: var(--nj-semi-grey);
   font-size: 1.1em;
@@ -79,4 +81,49 @@
   transition-property: all;
   transition-duration: 350ms;
   transition-timing-function: ease-in-out;
+}
+
+/* SM ----------------------------------------------------------------------------------------- */
+.sm-top-bar-title {
+
+  margin: auto;
+  font-family: 'Glitter';
+
+  color: var(--nj-charcoal);
+  text-align: center;
+  user-select: none;
+}
+
+#open-btn, #close-btn {
+
+  cursor: pointer;
+}
+
+#menu-overlay {
+
+  display: none;
+  width: 360px;
+  position: fixed;
+  top: calc(48px + 6px);
+  left: 0;
+  padding: 24px;
+  background-color: var(--nj-mud);
+}
+
+.sm-menu-list {
+
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.sm-menu-list-item {
+
+  color: white;
+  text-decoration: none;
+  font-family: 'Addington Cf Thin';
+}
+
+.sm-menu-list-item-description {
+
+  font-size: smaller;
 }
