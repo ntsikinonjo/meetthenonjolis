@@ -83,6 +83,38 @@
   transition-timing-function: ease-in-out;
 }
 
+.xs-home-bottom-drawer {
+
+  color: white;
+  font-family: 'Addington Cf Thin';
+  background-color: var(--nj-mud);
+}
+
+.xs-homea-bottom-border {
+
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+  border-bottom-color: white;
+}
+
+.xs-home-bottom-drawer-heading {
+
+  font-weight: bold;
+}
+
+
+.xs-home-bottom-drawer-right-column {
+
+  text-align: end;
+}
+
+.xs-home-bottom-drawer-est {
+
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
 /* SM ----------------------------------------------------------------------------------------- */
 .sm-top-bar-title {
 
