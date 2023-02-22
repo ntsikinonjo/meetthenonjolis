@@ -115,6 +115,13 @@
   letter-spacing: 3px;
 }
 
+.xs-home-bottom-list-item {
+
+  color: white;
+  text-decoration: none;
+  font-family: 'Addington Cf Thin';
+}
+
 /* SM ----------------------------------------------------------------------------------------- */
 .sm-top-bar-title {
 
