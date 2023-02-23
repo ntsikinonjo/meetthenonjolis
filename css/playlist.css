@@ -1,20 +1,10 @@
 /*
- * tcs
+ * playlist
  */
 .xs-playlist-bg {
 
-    color: white;
-    height: 100vh;
-    min-height: 100vh;
-    max-height: 200vh;
+    color: var(--nj-charcoal);
     font-family: 'Addington Cf Thin';
-
-    background-size: cover;
-    background-position: top;
-    background-repeat: repeat-y;
-    background-image: url(../img/xs/tcs-bg-img.JPG);
-
-    box-shadow: inset 0 0 0 1000px var(--nj-mud-alpha);
 }
 
 .xs-playlist-top-title {
@@ -32,6 +22,38 @@
     border-bottom-style: dashed;
     border-bottom-color: var(--nj-charcoal);
 }
+
+.xs-playlist-title {
+
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Voga';
+    letter-spacing: 4px;
+}
+
+.xs-playlist-subtitle {
+
+    text-align: center;
+    font-family: 'Voga';
+}
+
+.xs-playlist-bottom-links {
+
+    color: white;
+    background-color: var(--nj-charcoal);
+}
+
+.xs-playlist-bottom-links-heading {
+
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.xs-playlist-link {
+
+    display: block;
+    text-align: center;
+  }
 
 .xs-playlist-title {
 
