@@ -1,5 +1,6 @@
 import home from "./home.js"
 import menu from "./menu.js"
+import playlist from "./playlist.js"
 import story from "./story.js";
 import tcs from "./tcs.js";
 
@@ -14,6 +15,7 @@ const About = { template: '<div>About</div>' }
 const routes = [
     { path: '/', component: home },
     { path: '/menu', component: menu },
+    { path: '/playlist', component: playlist },
     { path: '/story', component: story },
     { path: '/about', component: About },
     { path: '/tcs', component: tcs },

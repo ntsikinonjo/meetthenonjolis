@@ -1,7 +1,7 @@
 /*
  * tcs
  */
-.xs-tcs-bg {
+.xs-playlist-bg {
 
     color: white;
     height: 100vh;
@@ -17,16 +17,23 @@
     box-shadow: inset 0 0 0 1000px var(--nj-mud-alpha);
 }
 
-.xs-tcs-top-title {
+.xs-playlist-top-title {
 
     margin: auto;
     font-family: 'Glitter';
 
-    color: white;
+    color: var(--nj-charcoal);
     text-align: center;
 }
 
-.xs-tcs-title {
+.xs-playlist-divider {
+
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: var(--nj-charcoal);
+}
+
+.xs-playlist-title {
 
     font-size: 3em;
     text-align: center;
@@ -34,13 +41,13 @@
     letter-spacing: 4px;
 }
 
-.xs-tcs-subtitle {
+.xs-playlist-subtitle {
 
     text-align: center;
     font-family: 'Voga';
 }
 
-.xs-tcs-list {
+.xs-playlist-list {
 
     list-style-type: square;
 }
