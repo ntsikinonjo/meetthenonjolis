@@ -29,6 +29,7 @@
 
 
     /* mud */
-    --nj-mud: rgba(145, 111, 111);
+    --nj-mud: rgba(145, 111, 111, 1.0);
+    --nj-mud-alpha: rgba(145, 111, 111, 0.9);
     --nj-mud-highlight: rgb(179, 157, 157);
   }

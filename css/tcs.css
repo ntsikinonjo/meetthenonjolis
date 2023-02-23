@@ -1,0 +1,32 @@
+/*
+ * tcs
+ */
+.xs-tcs-bg {
+
+    color: white;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 200vh;
+    font-family: 'Addington Cf Thin';
+
+    background-size: cover;
+    background-position: top;
+    background-repeat: repeat-y;
+    background-image: url(../img/xs/tcs-bg-img.JPG);
+
+    box-shadow: inset 0 0 0 1000px var(--nj-mud-alpha);
+}
+
+.xs-tcs-title {
+
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Voga';
+    letter-spacing: 4px;
+}
+
+.xs-tcs-subtitle {
+
+    text-align: center;
+    font-family: 'Voga';
+}
