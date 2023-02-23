@@ -106,3 +106,10 @@
     padding-left: 28px;
     text-align: center;
 }
+
+.xs-playlist-bottom-links-est {
+
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3px;
+}

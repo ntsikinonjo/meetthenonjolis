@@ -1,0 +1,64 @@
+/*
+ * story
+ */
+.xs-story-bg {
+
+    color: white;
+    background-color: var(--nj-mud);
+    font-family: 'Addington Cf Thin';
+}
+
+.xs-story-top-title {
+
+    margin: auto;
+    font-family: 'Glitter';
+
+    color: white;
+    text-align: center;
+}
+
+.xs-story-divider {
+
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: white;
+}
+
+.xs-story-title {
+
+    font-size: 2.25em;
+    text-align: center;
+}
+
+.xs-story-subtitle {
+
+    font-weight: 1.25em;
+    text-align: center;
+}
+
+.xs-story-jetline {
+
+    border-width: 1px;
+    border-style: dashed;
+    border-color: white;
+    background-clip: content-box;
+
+    background-size: 100%;
+    background-position: top;
+    background-repeat: repeat-y;
+    background-image: url(../img/xs/jetline-wits.jpg);
+
+    box-shadow: inset 0 0 0 1000px var(--nj-mud-alpha);
+}
+
+.xs-story-img {
+
+    float: right;
+    width: 176px;
+    height: auto;
+    padding: 4px;
+
+    border-width: 1px;
+    border-style: dashed;
+    border-color: white;
+}
