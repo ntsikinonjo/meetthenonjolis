@@ -1,0 +1,359 @@
+{
+    "guests": [
+
+        {
+            "firstName": "Noma",
+            "lastName": "Dube",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Mdu",
+            "lastName": "Nkomo",
+            "attending": "TBC",
+            "relationship": "Brother"
+        },
+        {
+            "firstName": "Dad",
+            "lastName": "Cousin",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Fatima",
+            "lastName": "Brother 1",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Fatima",
+            "lastName": "Brother 2",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Vusa",
+            "lastName": "Dube",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Vusa",
+            "lastName": "Brother 1",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Vusa",
+            "lastName": "Brother 2",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Takunda",
+            "lastName": "-",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Sgcebe",
+            "lastName": "Mom",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Noni",
+            "lastName": "Dube",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Andrew",
+            "lastName": "",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Paul",
+            "lastName": "Dube",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Mbali",
+            "lastName": "",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Chove",
+            "lastName": "",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Nomsa",
+            "lastName": "",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Ndlalifa",
+            "lastName": "",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Charles",
+            "lastName": "Nkomo",
+            "attending": "TBC",
+            "relationship": "Parent"
+        },
+        {
+            "firstName": "Charles",
+            "lastName": "Plus 1",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Ndumi",
+            "lastName": "",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Ndumi",
+            "lastName": "Plus 1",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Gogo",
+            "lastName": "",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Gogo",
+            "lastName": "Sister",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Gogo",
+            "lastName": "Brother",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Aunty",
+            "lastName": "",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Aunty",
+            "lastName": "Plus 1",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Delight",
+            "lastName": "",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Nge",
+            "lastName": "",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Nge",
+            "lastName": "Plus 1",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Sihle",
+            "lastName": "",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Zoe",
+            "lastName": "",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Elaine",
+            "lastName": "Brother 1",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Leroy",
+            "lastName": "Brother 1",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Thandiwe",
+            "lastName": "",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Gontse",
+            "lastName": "Nonjoli",
+            "attending": "TBC",
+            "relationship": "Parent"
+        },
+        {
+            "firstName": "Letlhogonolo",
+            "lastName": "Marametsi",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Lizzy",
+            "lastName": "Marametsi",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Mebra",
+            "lastName": "Nonjoli",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Phakamile",
+            "lastName": "Nonjoli",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Patrick",
+            "lastName": "Nonjoli",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Tokozi",
+            "lastName": "Nonjoli",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Mebra",
+            "lastName": "Plus 1",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Phakamile",
+            "lastName": "Plus 1",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Patrick",
+            "lastName": "Plus 1",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Tokozi",
+            "lastName": "Plus 1",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Mpho",
+            "lastName": "Tsipane",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Lekoko",
+            "lastName": "Tsipane",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Kenewang",
+            "lastName": "Tsipane",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Anele",
+            "lastName": "Makapela",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Andro",
+            "lastName": "Macucule",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Ayanda",
+            "lastName": "Nonjoli",
+            "attending": "TBC",
+            "relationship": "Sister"
+        },
+        {
+            "firstName": "Portia",
+            "lastName": "Dikobe",
+            "attending": "TBC",
+            "relationship": "Sister"
+        },
+        {
+            "firstName": "Dinah",
+            "lastName": "Dikobe",
+            "attending": "TBC",
+            "relationship": "Sister"
+        },
+        {
+            "firstName": "Thandolwethu",
+            "lastName": "Nonjoli",
+            "attending": "TBC",
+            "relationship": "Sister"
+        },
+        {
+            "firstName": "Kagiso",
+            "lastName": "",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Hope",
+            "lastName": "Shateyi",
+            "attending": "TBC",
+            "relationship": "Friend"
+        },
+        {
+            "firstName": "Thozamile",
+            "lastName": "Nonjoli",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Bulelani",
+            "lastName": "Nonjoli",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Rorisang",
+            "lastName": "Phusoane",
+            "attending": "TBC",
+            "relationship": "Family"
+        }
+    ]
+}

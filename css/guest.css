@@ -1,0 +1,50 @@
+/*
+ * guest
+ */
+ .xs-guest-bg {
+
+    color: white;
+    text-align: center;
+    background-color: var(--nj-mud);
+    font-family: 'Addington Cf Thin';
+}
+
+.xs-guest-divider {
+
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: white;
+}
+
+.xs-guest-top-title {
+
+    margin: auto;
+    font-family: 'Glitter';
+    text-align: center;
+}
+
+.xs-guest-title {
+
+    font-size: 3em;
+    letter-spacing: 4px;
+}
+
+.xs-guest-list-alphabet {
+
+    width: 1em;
+    text-align: start;
+
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: white;
+}
+
+.xs-guest-list-alphabet-table-data {
+
+    color: white;
+}
+
+.xs-guest-list-alphabet-table-data-center {
+
+    text-align: center;
+}

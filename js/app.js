@@ -1,3 +1,4 @@
+import guest from "./guest.js"
 import home from "./home.js"
 import menu from "./menu.js"
 import playlist from "./playlist.js"
@@ -14,6 +15,7 @@ const About = { template: '<div>About</div>' }
 // We'll talk about nested routes later.
 const routes = [
     { path: '/', component: home },
+    { path: '/guest', component: guest },
     { path: '/menu', component: menu },
     { path: '/playlist', component: playlist },
     { path: '/story', component: story },
