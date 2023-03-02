@@ -218,6 +218,18 @@
             "relationship": "Family"
         },
         {
+            "firstName": "Lesego",
+            "lastName": "Marametsi",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Mpho",
+            "lastName": "Moitlhwe",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
             "firstName": "Lizzy",
             "lastName": "Marametsi",
             "attending": "TBC",
@@ -382,6 +394,18 @@
         {
             "firstName": "Pastor",
             "lastName": "Pahla",
+            "attending": "TBC",
+            "relationship": "Friend"
+        },
+        {
+            "firstName": "Malcolm",
+            "lastName": "Bogoshi",
+            "attending": "TBC",
+            "relationship": "Friend"
+        },
+        {
+            "firstName": "Palesa",
+            "lastName": "Bogoshi",
             "attending": "TBC",
             "relationship": "Friend"
         }
