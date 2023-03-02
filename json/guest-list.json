@@ -2,408 +2,483 @@
     "guests": [
 
         {
-            "firstName": "Noma",
-            "lastName": "Dube",
+            "id": 1,
+            "firstName": "Gogo",
+            "lastName": "Agnes",
             "attending": "TBC",
-            "relationship": "Mother"
+            "relationship": "Family"
         },
         {
-            "firstName": "Mduduzi",
+            "id": 2,
+            "firstName": "Ndumiso",
             "lastName": "Nkomo",
             "attending": "TBC",
-            "relationship": "Brother"
+            "relationship": "Family"
         },
         {
-            "firstName": "Dad",
-            "lastName": "Cousin",
+            "id": 3,
+            "firstName": "Busi",
+            "lastName": "Moyo",
             "attending": "TBC",
             "relationship": "Family"
         },
         {
-            "firstName": "Fatima",
-            "lastName": "Brother 1",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
-            "firstName": "Fatima",
-            "lastName": "Brother 2",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
-            "firstName": "Vusa",
-            "lastName": "Dube",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
-            "firstName": "Vusa",
-            "lastName": "Brother 1",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
-            "firstName": "Vusa",
-            "lastName": "Brother 2",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
-            "firstName": "Takunda",
-            "lastName": "-",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
-            "firstName": "Sgcebe",
-            "lastName": "Mom",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
-            "firstName": "Noni",
-            "lastName": "Dube",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
-            "firstName": "Andrew",
-            "lastName": "",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
-            "firstName": "Paul",
-            "lastName": "Dube",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
-            "firstName": "Mbali",
-            "lastName": "",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
-            "firstName": "Chove",
-            "lastName": "",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
-            "firstName": "Nomsa",
-            "lastName": "",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
-            "firstName": "Ndlalifa",
-            "lastName": "",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
-            "firstName": "Charles",
+            "id": 4,
+            "firstName": "Sifiso",
             "lastName": "Nkomo",
             "attending": "TBC",
-            "relationship": "Father"
+            "relationship": "Family"
         },
         {
-            "firstName": "Charles",
-            "lastName": "Plus 1",
+            "id": 5,
+            "firstName": "Siphathisiwe",
+            "lastName": "Nkomo",
             "attending": "TBC",
             "relationship": "Family"
         },
         {
-            "firstName": "Ndumi",
-            "lastName": "",
+            "id": 6,
+            "firstName": "Ntokozo",
+            "lastName": "Mahlangu",
             "attending": "TBC",
             "relationship": "Family"
         },
         {
-            "firstName": "Ndumi",
-            "lastName": "Plus 1",
+            "id": 7,
+            "firstName": "Sibusiso",
+            "lastName": "Mangena",
             "attending": "TBC",
             "relationship": "Family"
         },
         {
-            "firstName": "Gogo",
-            "lastName": "",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
-            "firstName": "Gogo",
-            "lastName": "Sister",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
-            "firstName": "Gogo",
-            "lastName": "Brother",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
-            "firstName": "Aunty",
-            "lastName": "",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
-            "firstName": "Aunty",
-            "lastName": "Plus 1",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
-            "firstName": "Delight",
-            "lastName": "",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
-            "firstName": "Nge",
-            "lastName": "",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
-            "firstName": "Nge",
-            "lastName": "Plus 1",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
+            "id": 8,
             "firstName": "Sihle",
-            "lastName": "",
+            "lastName": "Nkomo",
             "attending": "TBC",
             "relationship": "Family"
         },
         {
+            "id": 9,
+            "firstName": "Leroy",
+            "lastName": "Gumede",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "id": 10,
+            "firstName": "Elaine",
+            "lastName": "Gumede",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "id": 11,
             "firstName": "Zoe",
             "lastName": "",
             "attending": "TBC",
             "relationship": "Family"
         },
         {
-            "firstName": "Elaine",
-            "lastName": "Brother 1",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
-            "firstName": "Leroy",
-            "lastName": "Brother 1",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
-            "firstName": "Thandiwe",
+            "id": 12,
+            "firstName": "MaHlelo",
             "lastName": "",
             "attending": "TBC",
             "relationship": "Family"
         },
         {
+            "id": 13,
+            "firstName": "Eli",
+            "lastName": "Chakawa",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "id": 14,
+            "firstName": "Buhle",
+            "lastName": "Chakawa",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "id": 15,
+            "firstName": "Takunda",
+            "lastName": "",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "id": 16,
+            "firstName": "Vusa",
+            "lastName": "Dube",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "id": 17,
+            "firstName": "Andile",
+            "lastName": "Dube",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "id": 18,
+            "firstName": "Michael",
+            "lastName": "Chimkoko",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "id": 19,
+            "firstName": "Emanuel",
+            "lastName": "Chimkoko",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "id": 20,
+            "firstName": "Paul",
+            "lastName": "Dube",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "id": 21,
+            "firstName": "Mbali",
+            "lastName": "",
+            "attending": "TBC",
+            "relationship": "Friend"
+        },
+        {
+            "id": 22,
+            "firstName": "Gogo",
+            "lastName": "Clorane",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "id": 23,
+            "firstName": "Gogo",
+            "lastName": "Thandiwe",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "id": 24,
+            "firstName": "Nomthandazo",
+            "lastName": "Ndlovu",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "id": 25,
+            "firstName": "Andrew",
+            "lastName": "Matanhire",
+            "attending": "TBC",
+            "relationship": "Friend"
+        },
+        {
+            "id": 26,
+            "firstName": "Nomsa",
+            "lastName": "Ncube",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "id": 27,
+            "firstName": "Ronnie",
+            "lastName": "Phaahla",
+            "attending": "TBC",
+            "relationship": "Pastor"
+        },
+        {
+            "id": 28,
+            "firstName": "Ntando",
+            "lastName": "Phaahla",
+            "attending": "TBC",
+            "relationship": "Friend"
+        },
+        {
+            "id": 29,
+            "firstName": "Koketso",
+            "lastName": "Raphotle",
+            "attending": "TBC",
+            "relationship": "Friend"
+        },
+        {
+            "id": 30,
+            "firstName": "Puleng",
+            "lastName": "Thabane",
+            "attending": "TBC",
+            "relationship": "Friend"
+        },
+        {
+            "id": 31,
+            "firstName": "Yvette",
+            "lastName": "Mogane",
+            "attending": "TBC",
+            "relationship": "Friend"
+        },
+        {
+            "id": 32,
+            "firstName": "Kutala",
+            "lastName": "Mvumvu",
+            "attending": "TBC",
+            "relationship": "Friend"
+        },
+        {
+            "id": 33,
+            "firstName": "Dikeledi",
+            "lastName": "Matlebjane",
+            "attending": "TBC",
+            "relationship": "Friend"
+        },
+        {
+            "id": 34,
+            "firstName": "Nomasondo",
+            "lastName": "Maroga",
+            "attending": "TBC",
+            "relationship": "Friend"
+        },
+        {
+            "id": 35,
+            "firstName": "Noma",
+            "lastName": "Dube",
+            "attending": "TBC",
+            "relationship": "Mother"
+        },
+        {
+            "id": 36,
+            "firstName": "Mduduzi",
+            "lastName": "Nkomo",
+            "attending": "TBC",
+            "relationship": "Brother"
+        },
+        {
+            "id": 37,
+            "firstName": "Charles",
+            "lastName": "Nkomo",
+            "attending": "TBC",
+            "relationship": "Father"
+        },
+        {
+            "id": 1,
             "firstName": "Gontse",
             "lastName": "Nonjoli",
             "attending": "TBC",
             "relationship": "Mother"
         },
         {
+            "id": 2,
             "firstName": "Letlhogonolo",
             "lastName": "Marametsi",
             "attending": "TBC",
             "relationship": "Family"
         },
         {
-            "firstName": "Lesego",
-            "lastName": "Marametsi",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
-            "firstName": "Mpho",
-            "lastName": "Moitlhwe",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
-            "firstName": "Lizzy",
-            "lastName": "Marametsi",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
+            "id": 3,
             "firstName": "Mebra",
             "lastName": "Nonjoli",
             "attending": "TBC",
             "relationship": "Family"
         },
         {
-            "firstName": "Phakamile",
-            "lastName": "Nonjoli",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
+            "id": 4,
             "firstName": "Patrick",
             "lastName": "Nonjoli",
             "attending": "TBC",
             "relationship": "Family"
         },
         {
+            "id": 5,
+            "firstName": "Phakamile",
+            "lastName": "Nonjoli",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "id": 6,
             "firstName": "Tokozi",
             "lastName": "Nonjoli",
             "attending": "TBC",
             "relationship": "Family"
         },
         {
+            "id": 7,
             "firstName": "Mebra",
             "lastName": "Plus 1",
             "attending": "TBC",
             "relationship": "Family"
         },
         {
-            "firstName": "Phakamile",
-            "lastName": "Plus 1",
-            "attending": "TBC",
-            "relationship": "Family"
-        },
-        {
+            "id": 8,
             "firstName": "Patrick",
             "lastName": "Plus 1",
             "attending": "TBC",
             "relationship": "Family"
         },
         {
+            "id": 9,
+            "firstName": "Phakamile",
+            "lastName": "Plus 1",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "id": 10,
             "firstName": "Tokozi",
             "lastName": "Plus 1",
             "attending": "TBC",
             "relationship": "Family"
         },
         {
+            "id": 11,
             "firstName": "Mpho",
             "lastName": "Tsipane",
             "attending": "TBC",
             "relationship": "Family"
         },
         {
+            "id": 12,
             "firstName": "Lekoko",
             "lastName": "Tsipane",
             "attending": "TBC",
             "relationship": "Family"
         },
         {
+            "id": 13,
             "firstName": "Kenewang",
             "lastName": "Tsipane",
             "attending": "TBC",
             "relationship": "Family"
         },
         {
+            "id": 14,
+            "firstName": "Lizzy",
+            "lastName": "Marametsi",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "id": 15,
             "firstName": "Anele",
             "lastName": "Makapela",
             "attending": "TBC",
-            "relationship": "Family"
+            "relationship": "Friend"
         },
         {
+            "id": 16,
             "firstName": "Andro",
             "lastName": "Macucule",
             "attending": "TBC",
-            "relationship": "Family"
+            "relationship": "Friend"
         },
         {
+            "id": 17,
             "firstName": "Ayanda",
             "lastName": "Nonjoli",
             "attending": "TBC",
             "relationship": "Sister"
         },
         {
+            "id": 18,
             "firstName": "Portia",
             "lastName": "Dikobe",
             "attending": "TBC",
             "relationship": "Sister"
         },
         {
+            "id": 19,
             "firstName": "Dinah",
             "lastName": "Dikobe",
             "attending": "TBC",
             "relationship": "Sister"
         },
         {
+            "id": 20,
             "firstName": "Thandolwethu",
             "lastName": "Nonjoli",
             "attending": "TBC",
             "relationship": "Sister"
         },
         {
+            "id": 21,
             "firstName": "Kagiso",
             "lastName": "Mdladla",
             "attending": "TBC",
             "relationship": "Family"
         },
         {
+            "id": 22,
             "firstName": "Hope",
             "lastName": "Shateyi",
             "attending": "TBC",
             "relationship": "Friend"
         },
         {
+            "id": 23,
             "firstName": "Thozamile",
             "lastName": "Nonjoli",
             "attending": "TBC",
             "relationship": "Family"
         },
         {
+            "id": 24,
             "firstName": "Bulelani",
             "lastName": "Nonjoli",
             "attending": "TBC",
             "relationship": "Family"
         },
         {
+            "id": 25,
             "firstName": "Rorisang",
             "lastName": "Phusoane",
             "attending": "TBC",
-            "relationship": "Family"
+            "relationship": "Friend"
         },
         {
+            "id": 26,
             "firstName": "Rorisang",
             "lastName": "Plus 1",
+            "attending": "TBC",
+            "relationship": "Friend"
+        },
+        {
+            "id": 27,
+            "firstName": "Lesego",
+            "lastName": "Marametsi",
             "attending": "TBC",
             "relationship": "Family"
         },
         {
+            "id": 28,
+            "firstName": "Mpho",
+            "lastName": "Moitlhwe",
+            "attending": "TBC",
+            "relationship": "Friend"
+        },
+        {
+            "id": 29,
             "firstName": "Photographer",
             "lastName": "1",
             "attending": "Yes",
             "relationship": "--"
         },
         {
+            "id": 30,
             "firstName": "Photographer",
             "lastName": "2",
             "attending": "Yes",
             "relationship": "--"
         },
         {
-            "firstName": "Ntando",
-            "lastName": "Pahla",
-            "attending": "TBC",
-            "relationship": "Friend"
-        },
-        {
-            "firstName": "Pastor",
-            "lastName": "Pahla",
-            "attending": "TBC",
-            "relationship": "Friend"
-        },
-        {
+            "id": 31,
             "firstName": "Malcolm",
             "lastName": "Bogoshi",
             "attending": "TBC",
             "relationship": "Friend"
         },
         {
+            "id": 32,
             "firstName": "Palesa",
             "lastName": "Bogoshi",
             "attending": "TBC",
