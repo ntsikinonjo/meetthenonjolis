@@ -243,28 +243,28 @@
             "id": 35,
             "firstName": "Noma",
             "lastName": "Dube",
-            "attending": "TBC",
+            "attending": "Yes",
             "relationship": "Mother"
         },
         {
             "id": 36,
             "firstName": "Mduduzi",
             "lastName": "Nkomo",
-            "attending": "TBC",
+            "attending": "Yes",
             "relationship": "Brother"
         },
         {
             "id": 37,
             "firstName": "Charles",
             "lastName": "Nkomo",
-            "attending": "TBC",
+            "attending": "Yes",
             "relationship": "Father"
         },
         {
             "id": 1,
             "firstName": "Gontse",
             "lastName": "Nonjoli",
-            "attending": "TBC",
+            "attending": "Yes",
             "relationship": "Mother"
         },
         {
