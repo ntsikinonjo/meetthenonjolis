@@ -5,10 +5,10 @@
             "firstName": "Noma",
             "lastName": "Dube",
             "attending": "TBC",
-            "relationship": "Family"
+            "relationship": "Mother"
         },
         {
-            "firstName": "Mdu",
+            "firstName": "Mduduzi",
             "lastName": "Nkomo",
             "attending": "TBC",
             "relationship": "Brother"
@@ -107,7 +107,7 @@
             "firstName": "Charles",
             "lastName": "Nkomo",
             "attending": "TBC",
-            "relationship": "Parent"
+            "relationship": "Father"
         },
         {
             "firstName": "Charles",
@@ -209,7 +209,7 @@
             "firstName": "Gontse",
             "lastName": "Nonjoli",
             "attending": "TBC",
-            "relationship": "Parent"
+            "relationship": "Mother"
         },
         {
             "firstName": "Letlhogonolo",
@@ -327,7 +327,7 @@
         },
         {
             "firstName": "Kagiso",
-            "lastName": "",
+            "lastName": "Mdladla",
             "attending": "TBC",
             "relationship": "Family"
         },
@@ -354,6 +354,36 @@
             "lastName": "Phusoane",
             "attending": "TBC",
             "relationship": "Family"
+        },
+        {
+            "firstName": "Rorisang",
+            "lastName": "Plus 1",
+            "attending": "TBC",
+            "relationship": "Family"
+        },
+        {
+            "firstName": "Photographer",
+            "lastName": "1",
+            "attending": "Yes",
+            "relationship": "--"
+        },
+        {
+            "firstName": "Photographer",
+            "lastName": "2",
+            "attending": "Yes",
+            "relationship": "--"
+        },
+        {
+            "firstName": "Ntando",
+            "lastName": "Pahla",
+            "attending": "TBC",
+            "relationship": "Friend"
+        },
+        {
+            "firstName": "Pastor",
+            "lastName": "Pahla",
+            "attending": "TBC",
+            "relationship": "Friend"
         }
     ]
 }
