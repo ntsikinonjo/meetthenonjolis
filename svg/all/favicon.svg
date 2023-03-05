@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="144"
+   height="144"
+   viewBox="0 0 38.099999 38.1"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter1513"
+       x="-0.1456072"
+       y="-0.1456072"
+       width="1.2912144"
+       height="1.2912144">
+      <feGaussianBlur
+         stdDeviation="1.1921066"
+         id="feGaussianBlur1515" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter1517"
+       x="-0.030407203"
+       y="-0.030407203"
+       width="1.0608144"
+       height="1.0608144">
+      <feGaussianBlur
+         stdDeviation="0.074506665"
+         id="feGaussianBlur1519" />
+    </filter>
+  </defs>
+  <g
+     id="layer1">
+    <rect
+       style="fill:#916f6f;stroke:none;stroke-width:0.529167;stroke-linecap:round"
+       id="rect192"
+       width="33.866665"
+       height="33.866665"
+       x="2.1166673"
+       y="2.1166673"
+       ry="8.7306671" />
+    <circle
+       style="mix-blend-mode:normal;fill:none;stroke:#ffffff;stroke-width:1.05833;stroke-linecap:round;stroke-dasharray:none;filter:url(#filter1513)"
+       id="path1431-9"
+       cx="19.049999"
+       cy="19.049999"
+       r="11.641666" />
+    <circle
+       style="fill:none;stroke:#ffffff;stroke-width:1.05833;stroke-linecap:round;stroke-dasharray:none;filter:url(#filter1517)"
+       id="path1431"
+       cx="19.049999"
+       cy="19.049999"
+       r="11.641666" />
+  </g>
+</svg>
