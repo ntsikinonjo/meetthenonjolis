@@ -17,8 +17,8 @@
         },
         {
             "id": 3,
-            "firstName": "Busi",
-            "lastName": "Moyo",
+            "firstName": "Sibusiso",
+            "lastName": "Nkomo",
             "attending": "TBC",
             "relationship": "Family"
         },
@@ -45,7 +45,7 @@
         },
         {
             "id": 7,
-            "firstName": "Sibusiso",
+            "firstName": "Sbusiso",
             "lastName": "Mangena",
             "attending": "TBC",
             "relationship": "Family"
