@@ -1,7 +1,7 @@
 /*
  * guest
  */
- .xs-guest-bg {
+ .xs-seat-bg {
 
     color: white;
     text-align: center;
@@ -9,27 +9,27 @@
     font-family: 'Addington Cf Thin';
 }
 
-.xs-guest-divider {
+.xs-seat-divider {
 
     border-bottom-width: 1px;
     border-bottom-style: dashed;
     border-bottom-color: white;
 }
 
-.xs-guest-top-title {
+.xs-seat-top-title {
 
     margin: auto;
     font-family: 'Glitter';
     text-align: center;
 }
 
-.xs-guest-title {
+.xs-seat-title {
 
     font-size: 3em;
     letter-spacing: 4px;
 }
 
-.xs-guest-list-alphabet {
+.xs-seat-list-alphabet {
 
     width: 1em;
     text-align: start;
@@ -39,12 +39,12 @@
     border-bottom-color: white;
 }
 
-.xs-guest-list-alphabet-table-data {
+.xs-seat-list-alphabet-table-data {
 
     color: white;
 }
 
-.xs-guest-list-alphabet-table-data-center {
+.xs-seat-list-alphabet-table-data-center {
 
     text-align: center;
 }

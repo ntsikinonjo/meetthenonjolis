@@ -9,8 +9,9 @@
 
 /* TEMPLATES */
 @import url(css/home.css);
-@import url(css/menu.css);
-@import url(css/guest.css);
-@import url(css/playlist.css);
 @import url(css/story.css);
+@import url(css/schedule.css);
+@import url(css/seat.css);
+@import url(css/playlist.css);
+@import url(css/menu.css);
 @import url(css/tcs.css);
