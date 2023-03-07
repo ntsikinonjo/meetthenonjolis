@@ -86,7 +86,7 @@ function xsTemplate(sGuestList) {
         stringBuilder += guestTemplate.replace('#full-name', firstName + ' ' + lastName).replace('#attending', attending).replace('#relationship', relationship).replace('#table', table)
     }
 
-    xsTemplate = xsTemplate.replace('#$#$#$', '<p class="mt-5 px-5">Please check the seating plan the night before the wedding</p>').replace('#total-guests', '--')
+    xsTemplate = xsTemplate.replace('#$#$#$', '<p class="mt-5 px-5">Please check the seating plan on the night before the wedding</p>').replace('#total-guests', '--')
 
     return xsTemplate
 }
