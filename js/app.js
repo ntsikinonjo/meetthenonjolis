@@ -1,22 +1,10 @@
-import home from "./home.js"
-import story from "./story.js";
-import schedule from "./schedule.js";
-import seat from "./seat.js"
-import playlist from "./playlist.js"
-import menu from "./menu.js"
-import tcs from "./tcs.js";
+const About = { template: '<div>About</div>' }
 
 // 1. Define some routes
 // Each route should map to a component.
 // We'll talk about nested routes later.
 const routes = [
-    { path: '/', component: home },
-    { path: '/story', component: story },
-    { path: '/schedule', component: schedule },
-    { path: '/seat', component: seat },
-    { path: '/playlist', component: playlist },
-    { path: '/menu', component: menu },
-    { path: '/tcs', component: tcs }
+    { path: '/', component: About }
 ]
 
 // 2. Create the router instance and pass the `routes` option
