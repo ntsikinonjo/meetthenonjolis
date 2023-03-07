@@ -1,4 +1,4 @@
-const About = { template: '<div>About</div>' }
+const About = { template: '<div>Fixing</div>' }
 
 // 1. Define some routes
 // Each route should map to a component.
