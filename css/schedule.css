@@ -54,11 +54,15 @@
     text-align: center;
 }
 
-.xs-schedule-link {
+.xs-schedule-text-left {
 
-    display: block;
-    text-align: center;
-  }
+    text-align: left;
+}
+
+.xs-schedule-text-right {
+
+    text-align: right;
+}
 
 .xs-schedule-title {
 
