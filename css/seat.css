@@ -7,6 +7,9 @@
     text-align: center;
     background-color: var(--nj-mud);
     font-family: 'Addington Cf Thin';
+
+    height: 100vh;
+    min-height: 100vh;
 }
 
 .xs-seat-divider {
