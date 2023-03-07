@@ -1,4 +1,3 @@
-// import story from "./story.js";
 // import schedule from "./schedule.js";
 // import seat from "./seat.js"
 // import playlist from "./playlist.js"
@@ -8,20 +7,10 @@
 // 1. Define some routes
 // Each route should map to a component.
 // We'll talk about nested routes later.
-const home = {
-
-    template: getHomeHtmlTemplate(),
-    
-    mounted : function () {
-
-        mountedHomeCallbacks()
-    }
-}
-
-const story = {
-
-    template: getStoryXsTemplate()
-}
+const home = { template: getHomeHtmlTemplate(), mounted : function () { mountedHomeCallbacks() }}
+const story = { template: getStoryXsTemplate() }
+const schedule = { template: getScheduleHtmlTemplate(), mounted : function () { mountedScheduleCallbacks() }}
+const seat = { template: getSeatHtmlTemplate() }
 
 // 1. Define some routes
 // Each route should map to a component.
@@ -29,8 +18,8 @@ const story = {
 const routes = [
     { path: '/', component: home },
     { path: '/story', component: story },
-    // { path: '/schedule', component: schedule },
-    // { path: '/seat', component: seat },
+    { path: '/schedule', component: schedule },
+    { path: '/seat', component: seat },
     // { path: '/playlist', component: playlist },
     // { path: '/menu', component: menu },
     // { path: '/tcs', component: tcs }
@@ -259,3 +248,755 @@ function getStoryXsTemplate() {
     '<!-- menu btn --><div class="row"><div class="col"><router-link to="/menu"><div class="xs-home-menu-btn mx-auto"><img src="svg/xs/menu-btn.svg" alt="menu-btn" width="48" height="48"></div></router-link></div></div></div>'
 }
 // END XS -------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+/** -------------------------------------------------------------------------------------------------------------------
+ *  SCHEDULE ----------------------------------------------------------------------------------------------------------
+ *  -------------------------------------------------------------------------------------------------------------------
+ */
+function getScheduleHtmlTemplate() {
+
+    let width = window.innerWidth
+
+    // extra large
+    if (width >= 1200) return 'extra large'
+
+    // large
+    else if (width >= 992) return 'large'
+
+    // medium
+    else if (width >= 768) return 'medium'
+
+    // small
+    else if (width >= 576) return getScheduleSmTemplate()
+
+    // extra small
+    else return getScheduleXsTemplate()
+}
+
+/** -------------------------------------------------------------------------------------------------------------------
+ * CONSTANTS
+ */
+var isOpen = false
+
+
+
+
+/** -------------------------------------------------------------------------------------------------------------------
+ * START CALLBACKS
+ */
+function mountedScheduleCallbacks() {
+
+    let width = window.innerWidth
+
+    // small
+    if (576 <= width && width < 768) setupScheduleMenuOverlay()
+}
+// END CALLBACKS ------------------------------------------------------------------------------------------------------
+
+
+
+
+/** -------------------------------------------------------------------------------------------------------------------
+ * START XS
+ */
+function getScheduleXsTemplate() {
+
+    return '<div class="container-fluid g-0 xs-schedule-bg">' +
+    '<!-- n&n --><div class="row mb-3"><div class="col xs-schedule-divider"><div class="px-2 py-2 mx-auto"><h1 class="xs-schedule-top-title">n&n</h1></div></div></div>' +
+    '<!-- playlist --><div class="row"><div class="col"><div class="mt-3 mx-auto px-4"><h1 class="xs-schedule-title text-decoration-underline">Schedule</h1></div></div></div>' +
+    '<!-- get to know --><div class="row"><div class="col"><div class="mx-auto px-5"><p class="xs-schedule-subtitle">The business of the day &#40;arrive on time&#41;. If you need a place to stay overnight, there is an affordable guest house next to the venue. The details of the guest house are below.</p></div></div></div><div class="row mt-3 mx-3"><div class="col"><table class="table table-fit table-bordered"><tbody><tr><td class="xs-schedule-table-data-center p-3">09:45</td><td class="p-3">Arrival</td></tr><tr><td class="xs-schedule-table-data-center p-3">10:00</td><td class="p-3">Chapel</td></tr><tr><td class="xs-schedule-table-data-center p-3">--</td><td class="p-3">Say cheese</td></tr><tr><td class="xs-schedule-table-data-center p-3">--</td><td class="p-3">Lunch time</td></tr><tr><td class="xs-schedule-table-data-center p-3">--</td><td class="p-3">Toast &#x1f942;</td></tr><tr><td class="xs-schedule-table-data-center p-3">--</td><td class="p-3">Good times</td></tr></tbody></table></div></div>' +
+    '<!-- bottom links --><div class="row xs-schedule-bottom-links mt-4 pb-5"><div class="col pb-5">' +
+    '<!-- guest house --><div class="row mt-4"><div class="col"><div class="mx-auto px-4"><p class="xs-schedule-bottom-links-heading">Guest house</p></div></div></div>' +
+    '<!-- guest house name --><div class="row mt-4"><div class="col"><div class="mx-auto px-4"><p class="xs-schedule-bottom-links-heading">The Orchards Executive Accommodation</p></div></div></div>' +
+    '<!-- guest house contact --><div class="row my-2"><div class="col"><div class="mx-auto ps-4 pe-3 pt-3 pb-3"><p class="xs-schedule-text-left">Contact number</p></div></div><div class="col"><div class="mx-auto p-3"><p class="xs-schedule-text-right">+27 82 223 5151</p></div></div></div>' +
+    '<!-- guest house contact --><div class="row my-2"><div class="col"><div class="mx-auto ps-4 pe-3 pt-3 pb-3"><p class="xs-schedule-text-left">Email</p></div></div><div class="col"><div class="mx-auto p-3"><p class="xs-schedule-text-right">theorchardsmidrand@gmail.com</p></div></div></div></div></div>' +
+    '<!-- menu btn --><div class="row"><div class="col"><router-link to="/menu"><div class="xs-home-menu-btn mx-auto"><img src="svg/xs/menu-btn.svg" alt="menu-btn" width="48" height="48"></div></router-link></div></div></div>'
+}
+// END XS -------------------------------------------------------------------------------------------------------------
+
+
+
+
+/** -------------------------------------------------------------------------------------------------------------------
+ * START SM
+ */
+function getScheduleSmTemplate() {
+
+    return '<div class="container-fluid g-0 sm-tcs-bg">' +
+    '<!-- n&n --><div class="row"><div class="col-2">' +
+    '<!-- open button --><div id="open-btn" style="display:block"><img src="svg/sm/sm-open-btn.svg" alt="menu-btn" width="48" height="48"></div>' +
+    '<!-- close button --><div id="close-btn" style="display:none"><img src="svg/sm/sm-close-btn.svg" alt="menu-btn" width="48" height="48"></div></div><div class="col-8"><div class="px-2 py-2 mx-auto"><h1 class="sm-top-bar-title">n&n</h1></div></div><div class="col-2">' +
+    '<!-- menu overlay --><div id="menu-overlay" style="display:none"><ul class="sm-menu-list">' +
+    '<!-- home --><li><router-link class="sm-menu-list-item" to="/"><h1>Home</h1><p class="sm-menu-list-item-description">All the important information is here.</p></router-link></li>' +
+    '<!-- our story --><li class="mt-3"><router-link class="sm-menu-list-item" to="/story"><h1>Our story</h1><p class="sm-menu-list-item-description">Learn about us, how we met, how long we have been together, etc.</p></router-link></li>' +
+    '<!-- our story --><li class="mt-3"><router-link class="sm-menu-list-item" to="/"><h1>Schedule</h1><p class="sm-menu-list-item-description">Be on time, relax and enjoy</p></router-link></li>' +
+    '<!-- guest list --><li class="mt-3"><router-link class="sm-menu-list-item" to="/"><h1>Guest list</h1><p class="sm-menu-list-item-description">Find out if you are joining us.</p></router-link></li>' +
+    '<!-- playlist --><li class="mt-3"><router-link class="sm-menu-list-item" to="/"><h1>Playlist</h1><p class="sm-menu-list-item-description">Get to know the playlist, so you can groove along. Listen on Spotify or YouTube Music.</p></router-link></li></ul></div></div></div><div class="mx-auto">' +
+    '<!-- house rules --><div class="row"><div class="col"><div class="mt-5 mx-auto pl-4 px-4"><h1 class="sm-tcs-title text-decoration-underline">House Rules</h1></div></div></div>' +
+    '<!-- house rules subtitle --><div class="row"><div class="col"><div class="mt-2 mx-auto px-4"><h4 class="sm-tcs-subtitle">Just a few house rules to ensure that we have a good time.</h4></div></div></div>' +
+    '<!-- general --><div class="row mt-5"><div class="col"><div class="mt-2 mx-auto px-4"><h5><strong>General</strong></h5></div></div></div><div class="row"><div class="col"><div class="mx-auto px-4"><ul class="sm-tcs-list"><li><p>Attendance is strictly by <strong>confirmed</strong> invitation only.</p></li><li><p>Should you wish to bring a plus one, it will be at your cost of a <strong>R1000.00</strong>, to be paid by <strong>15 March 2023</strong>. This amount is not refundable. Banking details are available on the home page.</p></li><li><p>A bar will be available, cash and cards are accepted.</p></li></ul></div></div></div>' +
+    '<!-- not allowed --><div class="row"><div class="col"><div class="mt-2 mx-auto px-4"><h5><strong>Not allowed</strong></h5></div></div></div><div class="row"><div class="col"><div class="mx-auto px-4"><ul class="sm-tcs-list"><li><p>Open tabs.</p></li><li><p>Drinks from outside the venue.</p></li><li><p>Children under 18.</p></li></ul></div></div></div></div></div>'
+}
+
+function setupScheduleMenuOverlay() {
+
+    isOpen = false
+    document.getElementById('open-btn').addEventListener('click', showScheduleMenuOverlay);
+    document.getElementById('close-btn').addEventListener('click', showScheduleMenuOverlay);
+}
+
+function showScheduleMenuOverlay() {
+
+    if (!isOpen) {
+
+        document.getElementById('open-btn').style.display = 'none'
+        document.getElementById('close-btn').style.display = 'block'
+        document.getElementById('sm-tcs-menu-overlay').style.display = 'block'
+    }
+    else {
+
+        document.getElementById('open-btn').style.display = 'block'
+        document.getElementById('close-btn').style.display = 'none'
+        document.getElementById('sm-tcs-menu-overlay').style.display = 'none'
+    }
+
+    isOpen = !isOpen
+}
+// END SM -------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+/** -------------------------------------------------------------------------------------------------------------------
+ *  SEAT --------------------------------------------------------------------------------------------------------------
+ *  -------------------------------------------------------------------------------------------------------------------
+ */
+/**
+ * Template by windows size
+ * @returns rendered page
+ */
+function getSeatHtmlTemplate() {
+
+    var jsonData = JSON.parse(getJsonGuestListString())
+
+    var sortedGuestList = jsonData.guests.sort((a,b) => (a.firstName > b.firstName) ? 1 : ((b.firstName > a.firstName) ? -1 : 0))
+
+    let width = window.innerWidth
+
+    // extra large
+    if (width >= 1200) return 'extra large'
+
+    // large
+    else if (width >= 992) return 'large'
+
+    // medium
+    else if (width >= 768) return 'medium'
+
+    // small
+    else if (width >= 576) return ''
+
+    // extra small
+    else return xsSeatTemplate(sortedGuestList)
+}
+
+/** -------------------------------------------------------------------------------------------------------------------
+ *  START XS
+ */
+function xsSeatTemplate(sGuestList) {
+
+
+    let stringBuilder = ''
+    let currentLetter = ''
+
+    let alphabetTemple = '<div class="row mt-5"><div class="col"><h1 class="xs-seat-list-alphabet ms-4">#letter</h1></div></div>'
+    let guestTemplate = '<div class="row mt-3 mx-3"><div class="col"><table class="table table-bordered"><tbody><!-- full name --><tr><td class="xs-seat-list-alphabet-table-data p-3" colspan="10">#full-name</td></tr><!-- meta --><tr><td class="xs-seat-list-alphabet-table-data p-3" colspan="4">Attending</td><td class="xs-seat-list-alphabet-table-data xs-seat-list-alphabet-table-data-center p-3" colspan="2">#attending</td><td class="xs-seat-list-alphabet-table-data xs-seat-list-alphabet-table-data-center p-3" colspan="4">#relationship</td></tr><!-- seat number --><tr><td class="xs-seat-list-alphabet-table-data p-3" colspan="6">Table number</td><td class="xs-seat-list-alphabet-table-data xs-seat-list-alphabet-table-data-center p-3" colspan="4">#table</td></tr></tbody></table></div></div>'
+    let xsTemplate = '<div class="container-fluid g-0 xs-seat-bg"><!-- n&n --><div class="row mb-3"><div class="col xs-seat-divider"><div class="px-2 py-2 mx-auto"><h1 class="xs-seat-top-title">n&n</h1></div></div></div><!-- guest list --><div class="row"><div class="col"><div class="mt-3 mx-auto px-4"><h1 class="xs-seat-title text-decoration-underline">Seating plan</h1></div></div></div><!-- guest list caption --><div class="row"><div class="col"><div class="mx-auto px-4"><!-- <p>In alphabetical order (name)</p> --><p>RSVP by <span class="text-decoration-underline">18 March 2023</span></p></div></div></div><!-- list --><div class="row"><div class="col"><div id="xs-seat-list" class="mx-auto px-2">#$#$#$</div></div></div><!-- guest list caption --><div class="row mt-5"><div class="col"><div class="mx-auto px-4"><!-- <p>Total guests #total-guests</span></p> --></div></div></div><!-- menu btn --><div class="row"><div class="col"><router-link to="/menu"><div class="xs-home-menu-btn mx-auto"><img src="svg/xs/menu-btn.svg" alt="menu-btn" width="48" height="48"></div></router-link></div></div></div>'
+
+
+    for (let i = 0; i < sGuestList.length; i++) {
+
+        let guestItem = sGuestList[i]
+
+        let letter = Array.from(guestItem.firstName)[0].toLowerCase()
+
+        if (currentLetter !== letter) {
+
+            stringBuilder += alphabetTemple.replace('#letter', letter)
+            currentLetter = letter
+        }
+
+        let firstName = guestItem.firstName
+        let lastName = guestItem.lastName
+        let attending = guestItem.attending
+        let relationship = guestItem.relationship
+        let table = guestItem.table
+
+        stringBuilder += guestTemplate.replace('#full-name', firstName + ' ' + lastName).replace('#attending', attending).replace('#relationship', relationship).replace('#table', table)
+    }
+
+    xsTemplate = xsTemplate.replace('#$#$#$', '<p class="mt-5 px-5">Please check the seating plan on the night before the wedding</p>').replace('#total-guests', '--')
+
+    return xsTemplate
+}
+// END XS -------------------------------------------------------------------------------------------------------------
+
+
+function getJsonGuestListString() {
+
+    return '{' +
+    '    "guests": [' +
+    '' +
+    '        {' +
+    '            "id": 1,' +
+    '            "firstName": "Gogo",' +
+    '            "lastName": "Agnes",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 2' +
+    '        },' +
+    '        {' +
+    '            "id": 2,' +
+    '            "firstName": "Ndumiso",' +
+    '            "lastName": "N",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 2' +
+    '        },' +
+    '        {' +
+    '            "id": 3,' +
+    '            "firstName": "Sibusiso",' +
+    '            "lastName": "N",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 2' +
+    '        },' +
+    '        {' +
+    '            "id": 4,' +
+    '            "firstName": "Sifiso",' +
+    '            "lastName": "N",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 2' +
+    '        },' +
+    '        {' +
+    '            "id": 5,' +
+    '            "firstName": "Siphathisiwe",' +
+    '            "lastName": "N",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 2' +
+    '        },' +
+    '        {' +
+    '            "id": 6,' +
+    '            "firstName": "Ntokozo",' +
+    '            "lastName": "M",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 2' +
+    '        },' +
+    '        {' +
+    '            "id": 7,' +
+    '            "firstName": "Sbusiso",' +
+    '            "lastName": "M",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 8' +
+    '        },' +
+    '        {' +
+    '            "id": 8,' +
+    '            "firstName": "Sihle",' +
+    '            "lastName": "N",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 2' +
+    '        },' +
+    '        {' +
+    '            "id": 9,' +
+    '            "firstName": "Leroy",' +
+    '            "lastName": "G",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 8' +
+    '        },' +
+    '        {' +
+    '            "id": 10,' +
+    '            "firstName": "Elaine",' +
+    '            "lastName": "G",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 8' +
+    '        },' +
+    '        {' +
+    '            "id": 11,' +
+    '            "firstName": "Zoe",' +
+    '            "lastName": "",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 8' +
+    '        },' +
+    '        {' +
+    '            "id": 12,' +
+    '            "firstName": "MaHlelo",' +
+    '            "lastName": "",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 2' +
+    '        },' +
+    '        {' +
+    '            "id": 13,' +
+    '            "firstName": "Eli",' +
+    '            "lastName": "C",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 1' +
+    '        },' +
+    '        {' +
+    '            "id": 14,' +
+    '            "firstName": "Buhle",' +
+    '            "lastName": "C",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 1' +
+    '        },' +
+    '        {' +
+    '            "id": 15,' +
+    '            "firstName": "Takunda",' +
+    '            "lastName": "",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 1' +
+    '        },' +
+    '        {' +
+    '            "id": 16,' +
+    '            "firstName": "Vusa",' +
+    '            "lastName": "D",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 1' +
+    '        },' +
+    '        {' +
+    '            "id": 17,' +
+    '            "firstName": "Andile",' +
+    '            "lastName": "D",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 8' +
+    '        },' +
+    '        {' +
+    '            "id": 18,' +
+    '            "firstName": "Michael",' +
+    '            "lastName": "C",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 1' +
+    '        },' +
+    '        {' +
+    '            "id": 19,' +
+    '            "firstName": "Emanuel",' +
+    '            "lastName": "C",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 1' +
+    '        },' +
+    '        {' +
+    '            "id": 20,' +
+    '            "firstName": "Paul",' +
+    '            "lastName": "D",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 1' +
+    '        },' +
+    '        {' +
+    '            "id": 21,' +
+    '            "firstName": "Mbali",' +
+    '            "lastName": "",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Friend",' +
+    '            "table": 1' +
+    '        },' +
+    '        {' +
+    '            "id": 22,' +
+    '            "firstName": "Gogo",' +
+    '            "lastName": "Clorane",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 1' +
+    '        },' +
+    '        {' +
+    '            "id": 23,' +
+    '            "firstName": "Gogo",' +
+    '            "lastName": "Thandiwe",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 1' +
+    '        },' +
+    '        {' +
+    '            "id": 24,' +
+    '            "firstName": "Nomthandazo",' +
+    '            "lastName": "N",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 8' +
+    '        },' +
+    '        {' +
+    '            "id": 25,' +
+    '            "firstName": "Andrew",' +
+    '            "lastName": "M",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Friend",' +
+    '            "table": 8' +
+    '        },' +
+    '        {' +
+    '            "id": 26,' +
+    '            "firstName": "Nomsa",' +
+    '            "lastName": "N",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 8' +
+    '        },' +
+    '        {' +
+    '            "id": 27,' +
+    '            "firstName": "Ronnie",' +
+    '            "lastName": "P",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Pastor",' +
+    '            "table": 4' +
+    '        },' +
+    '        {' +
+    '            "id": 28,' +
+    '            "firstName": "Ntando",' +
+    '            "lastName": "P",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Friend",' +
+    '            "table": 4' +
+    '        },' +
+    '        {' +
+    '            "id": 29,' +
+    '            "firstName": "Koketso",' +
+    '            "lastName": "R",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Friend",' +
+    '            "table": 4' +
+    '        },' +
+    '        {' +
+    '            "id": 30,' +
+    '            "firstName": "Puleng",' +
+    '            "lastName": "T",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Friend",' +
+    '            "table": 4' +
+    '        },' +
+    '        {' +
+    '            "id": 31,' +
+    '            "firstName": "Yvette",' +
+    '            "lastName": "M",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Friend",' +
+    '            "table": 4' +
+    '        },' +
+    '        {' +
+    '            "id": 32,' +
+    '            "firstName": "Kutala",' +
+    '            "lastName": "M",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Friend",' +
+    '            "table": 4' +
+    '        },' +
+    '        {' +
+    '            "id": 33,' +
+    '            "firstName": "Dikeledi",' +
+    '            "lastName": "M",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Friend",' +
+    '            "table": 4' +
+    '        },' +
+    '        {' +
+    '            "id": 34,' +
+    '            "firstName": "Nomasondo",' +
+    '            "lastName": "M",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Friend",' +
+    '            "table": 4' +
+    '        },' +
+    '        {' +
+    '            "id": 35,' +
+    '            "firstName": "Noma",' +
+    '            "lastName": "D",' +
+    '            "attending": "Yes",' +
+    '            "relationship": "Mother",' +
+    '            "table": 1' +
+    '        },' +
+    '        {' +
+    '            "id": 36,' +
+    '            "firstName": "Mduduzi",' +
+    '            "lastName": "N",' +
+    '            "attending": "Yes",' +
+    '            "relationship": "Brother",' +
+    '            "table": 8' +
+    '        },' +
+    '        {' +
+    '            "id": 37,' +
+    '            "firstName": "Charles",' +
+    '            "lastName": "N",' +
+    '            "attending": "Yes",' +
+    '            "relationship": "Father",' +
+    '            "table": 2' +
+    '        },' +
+    '        {' +
+    '            "id": 1,' +
+    '            "firstName": "Gontse",' +
+    '            "lastName": "N",' +
+    '            "attending": "Yes",' +
+    '            "relationship": "Mother",' +
+    '            "table": 6' +
+    '        },' +
+    '        {' +
+    '            "id": 2,' +
+    '            "firstName": "Letlhogonolo",' +
+    '            "lastName": "M",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 9' +
+    '        },' +
+    '        {' +
+    '            "id": 3,' +
+    '            "firstName": "Mebra",' +
+    '            "lastName": "N",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 7' +
+    '        },' +
+    '        {' +
+    '            "id": 4,' +
+    '            "firstName": "Patrick",' +
+    '            "lastName": "N",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 7' +
+    '        },' +
+    '        {' +
+    '            "id": 5,' +
+    '            "firstName": "Phakamile",' +
+    '            "lastName": "N",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 7' +
+    '        },' +
+    '        {' +
+    '            "id": 6,' +
+    '            "firstName": "Tokozi",' +
+    '            "lastName": "N",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 7' +
+    '        },' +
+    '        {' +
+    '            "id": 7,' +
+    '            "firstName": "Dibuseng",' +
+    '            "lastName": "N",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 7' +
+    '        },' +
+    '        {' +
+    '            "id": 8,' +
+    '            "firstName": "Patrick",' +
+    '            "lastName": "Plus 1",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 7' +
+    '        },' +
+    '        {' +
+    '            "id": 9,' +
+    '            "firstName": "Phakamile",' +
+    '            "lastName": "Plus 1",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 7' +
+    '        },' +
+    '        {' +
+    '            "id": 10,' +
+    '            "firstName": "Tokozi",' +
+    '            "lastName": "Plus 1",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 7' +
+    '        },' +
+    '        {' +
+    '            "id": 11,' +
+    '            "firstName": "Mpho",' +
+    '            "lastName": "T",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 6' +
+    '        },' +
+    '        {' +
+    '            "id": 12,' +
+    '            "firstName": "Lekoko",' +
+    '            "lastName": "T",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 6' +
+    '        },' +
+    '        {' +
+    '            "id": 13,' +
+    '            "firstName": "Kenewang",' +
+    '            "lastName": "T",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 6' +
+    '        },' +
+    '        {' +
+    '            "id": 14,' +
+    '            "firstName": "Lizzy",' +
+    '            "lastName": "M",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 6' +
+    '        },' +
+    '        {' +
+    '            "id": 15,' +
+    '            "firstName": "Anele",' +
+    '            "lastName": "M",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Friend",' +
+    '            "table": 1' +
+    '        },' +
+    '        {' +
+    '            "id": 16,' +
+    '            "firstName": "Andro",' +
+    '            "lastName": "M",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Friend",' +
+    '            "table": 1' +
+    '        },' +
+    '        {' +
+    '            "id": 17,' +
+    '            "firstName": "Ayanda",' +
+    '            "lastName": "N",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Sister",' +
+    '            "table": 3' +
+    '        },' +
+    '        {' +
+    '            "id": 18,' +
+    '            "firstName": "Portia",' +
+    '            "lastName": "D",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Sister",' +
+    '            "table": 3' +
+    '        },' +
+    '        {' +
+    '            "id": 19,' +
+    '            "firstName": "Dinah",' +
+    '            "lastName": "D",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Sister",' +
+    '            "table": 3' +
+    '        },' +
+    '        {' +
+    '            "id": 20,' +
+    '            "firstName": "Thandolwethu",' +
+    '            "lastName": "N",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Sister",' +
+    '            "table": 3' +
+    '        },' +
+    '        {' +
+    '            "id": 21,' +
+    '            "firstName": "Kagiso",' +
+    '            "lastName": "M",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 3' +
+    '        },' +
+    '        {' +
+    '            "id": 22,' +
+    '            "firstName": "Hope",' +
+    '            "lastName": "S",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Friend",' +
+    '            "table": 1' +
+    '        },' +
+    '        {' +
+    '            "id": 23,' +
+    '            "firstName": "Thozamile",' +
+    '            "lastName": "N",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 3' +
+    '        },' +
+    '        {' +
+    '            "id": 24,' +
+    '            "firstName": "Bulelani",' +
+    '            "lastName": "N",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 3' +
+    '        },' +
+    '        {' +
+    '            "id": 25,' +
+    '            "firstName": "Rorisang",' +
+    '            "lastName": "P",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Friend",' +
+    '            "table": 9' +
+    '        },' +
+    '        {' +
+    '            "id": 26,' +
+    '            "firstName": "Rorisang",' +
+    '            "lastName": "Plus 1",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Friend",' +
+    '            "table": 9' +
+    '        },' +
+    '        {' +
+    '            "id": 27,' +
+    '            "firstName": "Lesego",' +
+    '            "lastName": "M",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Family",' +
+    '            "table": 9' +
+    '        },' +
+    '        {' +
+    '            "id": 28,' +
+    '            "firstName": "Mpho",' +
+    '            "lastName": "M",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Friend",' +
+    '            "table": 9' +
+    '        },' +
+    '        {' +
+    '            "id": 29,' +
+    '            "firstName": "Malcolm",' +
+    '            "lastName": "B",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Friend",' +
+    '            "table": 9' +
+    '        },' +
+    '        {' +
+    '            "id": 30,' +
+    '            "firstName": "Palesa",' +
+    '            "lastName": "M",' +
+    '            "attending": "TBC",' +
+    '            "relationship": "Friend",' +
+    '            "table": 9' +
+    '        }' +
+    '    ]' +
+    '}'
+}

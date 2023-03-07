@@ -2,7 +2,7 @@ import guestList from '../json/guest-list.json' assert { type: 'json' };
 
 const seat = {
 
-    template: getHtmlTemplate()
+    template: getSeatHtmlTemplate()
 }
 export default seat
 
@@ -11,50 +11,34 @@ export default seat
  * Template by windows size
  * @returns rendered page
  */
-function getHtmlTemplate() {
+function getSeatHtmlTemplate() {
 
-    // var data = JSON.parse(fs.readFileSync('./json/guest-list.json'))
-    // fetch('./json/guest-list.json').then((response) => response.json()).then((json) => guestList = json);
+    var jsonData = JSON.parse(fs.readFileSync('./json/guest-list.json'))
 
-    var sortedGuestList = guestList.guests.sort((a,b) => (a.firstName > b.firstName) ? 1 : ((b.firstName > a.firstName) ? -1 : 0))
+    var sortedGuestList = jsonData.guests.sort((a,b) => (a.firstName > b.firstName) ? 1 : ((b.firstName > a.firstName) ? -1 : 0))
 
     let width = window.innerWidth
 
     // extra large
-    if (width >= 1200) {
-
-        return 'extra large'
-    }
+    if (width >= 1200) return 'extra large'
 
     // large
-    else if (width >= 992) {
-
-        return 'large'
-    }
+    else if (width >= 992) return 'large'
 
     // medium
-    else if (width >= 768) {
-
-        return 'medium'
-    }
+    else if (width >= 768) return 'medium'
 
     // small
-    else if (width >= 576) {
-
-        return 'small'
-    }
+    else if (width >= 576) return getSeatSmTemplate()
 
     // extra small
-    else {
-     
-        return xsTemplate(sortedGuestList)
-    }
+    else return xsSeatTemplate(sortedGuestList)
 }
 
 /** -------------------------------------------------------------------------------------------------------------------
  *  START XS
  */
-function xsTemplate(sGuestList) {
+function xsSeatTemplate(sGuestList) {
 
 
     let stringBuilder = ''

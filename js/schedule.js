@@ -1,11 +1,11 @@
 const schedule = {
 
-    template: getHtmlTemplate()
+    template: getScheduleHtmlTemplate()
 }
 export default schedule
 
 
-function getHtmlTemplate() {
+function getScheduleHtmlTemplate() {
 
     let width = window.innerWidth
 
@@ -19,10 +19,10 @@ function getHtmlTemplate() {
     else if (width >= 768) return 'medium'
 
     // small
-    else if (width >= 576) return getSmTemplate()
+    else if (width >= 576) return getScheduleSmTemplate()
 
     // extra small
-    else return getXsTemplate()
+    else return getScheduleXsTemplate()
 }
 
 /** -------------------------------------------------------------------------------------------------------------------
@@ -36,7 +36,7 @@ var isOpen = false
 /** -------------------------------------------------------------------------------------------------------------------
  * START CALLBACKS
  */
-function mountedCallbacks() {
+function mountedScheduleCallbacks() {
 
     let width = window.innerWidth
 
@@ -51,7 +51,7 @@ function mountedCallbacks() {
 /** -------------------------------------------------------------------------------------------------------------------
  * START XS
  */
-function getXsTemplate() {
+function getScheduleXsTemplate() {
 
     return '<div class="container-fluid g-0 xs-schedule-bg">' +
     '<!-- n&n --><div class="row mb-3"><div class="col xs-schedule-divider"><div class="px-2 py-2 mx-auto"><h1 class="xs-schedule-top-title">n&n</h1></div></div></div>' +
@@ -72,7 +72,7 @@ function getXsTemplate() {
 /** -------------------------------------------------------------------------------------------------------------------
  * START SM
  */
-function getSmTemplate() {
+function getScheduleSmTemplate() {
 
     return '<div class="container-fluid g-0 sm-tcs-bg">' +
     '<!-- n&n --><div class="row"><div class="col-2">' +
@@ -90,14 +90,14 @@ function getSmTemplate() {
     '<!-- not allowed --><div class="row"><div class="col"><div class="mt-2 mx-auto px-4"><h5><strong>Not allowed</strong></h5></div></div></div><div class="row"><div class="col"><div class="mx-auto px-4"><ul class="sm-tcs-list"><li><p>Open tabs.</p></li><li><p>Drinks from outside the venue.</p></li><li><p>Children under 18.</p></li></ul></div></div></div></div></div>'
 }
 
-function setupMenuOverlay() {
+function setupScheduleMenuOverlay() {
 
     isOpen = false
-    document.getElementById('open-btn').addEventListener('click', showMenuOverlay);
-    document.getElementById('close-btn').addEventListener('click', showMenuOverlay);
+    document.getElementById('open-btn').addEventListener('click', showScheduleMenuOverlay);
+    document.getElementById('close-btn').addEventListener('click', showScheduleMenuOverlay);
 }
 
-function showMenuOverlay() {
+function showScheduleMenuOverlay() {
 
     if (!isOpen) {
 
